@@ -1,0 +1,13 @@
+int marks[3] = {82, 70, 91};
+marks.add(95);
+marks.remove(70);
+print(marks.size());
+print(marks.contains(91));
+print(marks.indexOf(91));
+marks.sort();
+print(marks.get(0));
+marks.set(0, 75);
+marks.reverse();
+print(marks.pop());
+marks.clear();
+print(marks.length());
