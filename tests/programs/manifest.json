@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "name": "python-arithmetic",
+      "language": "python",
+      "path": "valid/python_arithmetic.py",
+      "expected_exit": 0,
+      "stdout_contains": ["42", "Execution completed.", "result = 42"]
+    },
+    {
+      "name": "cpp-complete-main",
+      "language": "cpp",
+      "path": "valid/cpp_complete.cpp",
+      "expected_exit": 0,
+      "stdout_contains": ["5", "Execution completed."]
+    },
+    {
+      "name": "java-complete-main",
+      "language": "java",
+      "path": "valid/Main.java",
+      "expected_exit": 0,
+      "stdout_contains": ["6", "Execution completed."]
+    },
+    {
+      "name": "python-syntax-error",
+      "language": "python",
+      "path": "invalid/python_syntax.py",
+      "expected_exit": 1,
+      "stderr_contains": ["Unexpected character '@'", "line 1, column 9"]
+    },
+    {
+      "name": "cpp-missing-include",
+      "language": "cpp",
+      "path": "invalid/cpp_missing_include.cpp",
+      "expected_exit": 1,
+      "stderr_contains": ["CPP_INCLUDE"]
+    },
+    {
+      "name": "java-missing-main",
+      "language": "java",
+      "path": "invalid/Broken.java",
+      "expected_exit": 1,
+      "stderr_contains": ["JAVA_MAIN"]
+    }
+  ]
+}

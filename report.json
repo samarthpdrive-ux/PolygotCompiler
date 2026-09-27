@@ -1,0 +1,35 @@
+[
+  {
+    "backend": "evaluator",
+    "elapsed_ms": 0.3360999999131309,
+    "opcode_count": null,
+    "output": [
+      "40320"
+    ],
+    "globals": {
+      "result": "40320"
+    }
+  },
+  {
+    "backend": "bytecode",
+    "elapsed_ms": 0.14250000003812602,
+    "opcode_count": 90,
+    "output": [
+      "40320"
+    ],
+    "globals": {
+      "result": "40320"
+    }
+  },
+  {
+    "backend": "bytecode-optimized",
+    "elapsed_ms": 0.0790999993114383,
+    "opcode_count": 88,
+    "output": [
+      "40320"
+    ],
+    "globals": {
+      "result": "40320"
+    }
+  }
+]
